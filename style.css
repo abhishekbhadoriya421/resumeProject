@@ -1,0 +1,537 @@
+/* Body */
+body{
+	margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+/* Body-Header */
+#body-header{
+		background-image: url('https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg');
+		height: 65vh;
+		opacity: 0.8;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-attachment:fixed;	
+	}
+
+	/* The Progress-bar keeps track how much we have viewed Profile */
+		#progressBar{
+			box-sizing: border-box;
+			background-color: white;
+			color: rgb(27, 161, 27);
+			font-size: 0.8rem;
+			position: fixed;
+			right: 10px;
+			top: 10px;
+			width: 100px;
+			height: 30px;
+			border-radius: 15px;
+			box-shadow: 0px 0px 20px 1px rgb(1, 1, 1);
+			padding: 8px;
+			text-align: center;
+			z-index: 3;
+		}
+
+		/*	NavigationBar*/
+
+			.text-center{
+				text-align: center;
+				margin: 0%;
+			}
+
+			.horizontal-list {
+			    list-style: none;
+			    padding-left: 0px;
+			    margin: 0px;
+			}
+
+
+			.horizontal-list li{
+				margin-top:1.2rem;
+				display: inline-block;
+				padding: 0px 0.6vw;
+			}
+
+			.navigationBar li a{
+				font-size:0.9rem ;
+				text-decoration: none;
+				color: white;
+				transition: color 0.5s , border-bottom 4s;
+			}	
+			.navigationBar li a:hover{
+				color: lightgrey;
+    			border-bottom: 2px solid black;
+				font-size: 1.1rem;
+			}
+
+		/*	Social And Name Container	*/
+				/* Name */
+			.social-container{
+				margin-top: 20vh;
+			}
+			#name h1{
+				
+				color: white;
+				letter-spacing: 0.1rem;
+				margin: 0%;
+			}
+
+
+				/* Social Icons*/
+			.social-container .horizontal-list ul li a img{
+				width: 1.1rem;
+			}
+
+			.social-container ul{
+				margin: 0%;
+			}
+
+			.social-container ul li:hover{
+				border: 0px solid black;
+				border-radius: 30px;
+				box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+			}
+
+
+/* Main */
+	
+	section {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	section:nth-child(2n){
+		background-color: #efefef;;
+	}
+	section:nth-child(2n+1){
+		background-color: white;
+	}
+
+	/* About*/
+	#About{
+		width: 100%;
+		margin: 0px;
+	}
+
+		/* My-Profile */
+		#myProfile{
+			width: 12rem;
+			height: 12rem;
+			margin: auto;
+			position: relative;
+			top: -15vh;
+		}
+		#myProfile img{
+			 width: 100%;
+			 height: 100%;	
+			 border-radius: 50%;
+			 box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);		
+		}
+
+		/* bio */
+		#bio{
+			margin: auto;
+			width: 60%;
+			color: grey;
+			text-align: justify;
+			letter-spacing: 2px;
+		}
+
+		#bio span{
+			color: #2857a4;
+		}
+
+
+
+
+	/*	main sections */	
+	.flexclass{
+		display: flex;
+		justify-content: space-evenly;
+		flex-direction: column;
+		margin-top: 2rem;
+		height: auto;
+		min-height: 70vh;
+
+	}
+
+
+	/*	main section Heading-Box*/
+	.heading-box{
+		color: #3e57a4;
+		display: flex;
+		justify-content: center;
+		
+	}
+
+		.heading-box h3{
+			margin: 0px 0px 0px 1rem;
+			font-family: 'Font Awesome 6 Free';
+		}
+
+	
+	/*	main section Container-box*/
+	.container{
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: center;
+	}
+
+	/*	main section Div's*/
+	.container > div{
+		font-size: 0.8rem;
+		margin: 30px;
+		width: 11rem;
+		overflow: hidden;
+	}
+
+	/*	Skills Section	*/
+	#Skills-Container > div{
+		background-color: #d3d3d3;
+		border-radius: 15px;
+	}
+
+	#Skills-Container div p{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height:30px;
+		margin: 0%;
+		color: white;
+		border-radius: 15px 0px 0px 15px;
+		transition:all 1s ease-in-out;
+	}
+
+		/*	setting color specifically to every skills*/
+		#Cplus{
+			background-color: #2857a4;
+			width: 60%;
+		}
+		#Java{
+			background-color: #93738c;
+			width: 80%;
+		}
+		#DSA{
+			background-color: #2857a4;
+			width: 70%;
+		}
+		#HTML{
+			background-color: #ec4d1c;
+			width: 95%;
+		}
+		#CSS{
+			background-color: #93738c;
+			width: 85%;
+		}
+		#JavaScript{
+			background-color: #0b8176;
+			width: 90%;
+		}
+
+	/*PitFall	Section	*/
+	#Pitfall-Container > div img{
+		width: 100%;
+		height: 100%;
+	}
+
+	#Pitfall-Container > div p{
+/*		display: none;*/
+	}
+
+	#Pitfall-Container > div p:hover{
+		cursor: pointer;
+		font-size: 2rem;
+	}
+
+	/*Experience Section*/
+
+	#Experience{
+		box-sizing: border-box;
+		flex-direction: column;
+		margin: 4rem auto;
+		width: 95%;
+		position: relative;
+		z-index: -1;
+	}
+
+
+	/*Air Scrolling Bar	*/
+	.airScrollBar{
+		position: absolute;
+		width: 0px;
+		height: 450px;
+		border: 1px dashed lightblue;
+		left: 50%;
+		top :15%;	
+	}
+	.airScrollBar .travelar{
+		position: sticky;
+		top: 0%;
+		transform: rotate(90deg);
+		color: #4a80af85;	
+	}
+
+	/* TimeLine	*/
+	.timeline{
+		box-sizing: border-box;
+		margin: 5rem auto;
+		width: 95%;
+	}
+
+	.timeline-box{
+		width: 45%;
+		position: relative;
+		display:grid;
+		grid-template-rows: repeat(2,50px);
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 2rem; 
+	}
+	.timeline-box:nth-child(2n+1){
+		left: 3px;
+	}
+	.timeline-box:nth-child(2n){
+		left: 54%;
+	}
+
+	.timeline-box i{
+			color:blue;
+		}
+	
+
+		/*TimeLine Content	*/
+
+		.timeline-content h5 , h6 , p{
+			margin: 0;
+		}
+		.timeline-content h5{
+			color:#3e57a4 ;
+		}
+
+		.timeline-content h6 {
+			font-size: 1.1rem;
+			color: orange;
+		}
+		.timeline-box p{
+			font-size: 0.9rem;
+			color: grey;
+		}
+		.timeline-box > p{
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+
+
+
+	/*Contact Section*/
+
+	#Contact{
+		box-sizing: border-box;
+		background: linear-gradient(45deg, #2b529b, #403066);
+		color: white;
+		width: 100%;
+		padding: 50px 10px;
+	}
+
+	#contact-Heading-Box  i{
+		color: white;
+	}
+	#contact-Heading-Box h3{
+		color: white;
+	}
+
+		/*Details 	*/
+		#details{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			flex-wrap: wrap;
+			font-family: sans-serif;
+		}
+
+			/*Contact Form*/
+			#contact-form{
+				width: 600px;
+				margin-right: 60px;
+
+			}
+
+			#contact-form input , textarea{
+				background-color: transparent;
+				border-top: 0px;
+				border-left: 0px;
+				border-right: 0px;
+				border-bottom: 2px solid white;
+				width :90%;
+				padding: 12px 12px 6px 6px;
+				color: grey;
+				font-size: 1.2rem;
+			}
+
+			#contact-form button{
+				padding: 10px 18px;
+				border-radius: 0px;
+				background-color: transparent;
+				color: white;
+				font-weight: bolder;
+				font-family: sans-serif;
+				margin:50px 30%;
+				border-color:white ;
+			}
+
+			/*Address*/
+			#Address{
+				width: 600px;
+				font-size: 1.5rem;
+
+			}
+			#Address > p , div span , .detailsIcons{
+				font-size: 0.7rem;
+			}
+
+	/*Education	Section	*/
+		#Education{
+			position: relative;
+			padding-top:60px ;
+			z-index: -1;
+		}
+
+		#Education .airScrollBar{
+			top :21%;		
+		}
+
+		
+
+
+		
+
+	
+
+/*Media Query*/
+
+	/*Experience and Education Section*/
+
+	@media screen and (max-width:650px){
+
+		.navigationBar li a {
+			font-size: 0.7;
+		}
+		.navigationBar li a:hover{
+			font-size: 0.8;
+		}
+
+		#name h1{
+			font-size: 2rem;
+		}
+
+		.social-container .horizontal-list ul li a img {
+   			 width: 0.9rem;
+		}
+
+		.horizontal-list li{
+			padding: 0px 2.5vw;
+		}
+
+		#myProfile{
+			width: 8rem;
+			height: 8rem;
+			top: -9vh;
+		}
+
+		#bio{
+			width: 90%;
+			letter-spacing: 1px;
+			font-size: 15px;
+		}
+
+		#Skills{
+			padding-top:30px ;
+		}
+
+		.heading-box h3 {
+		    font-size: 1.4rem;
+		}
+
+		.heading-box i {
+		    font-size: 1.4rem;
+		}
+
+		.timeline{
+			width: 100%;
+		}
+
+
+		.timeline-box{
+			width: 90%;
+			margin: 45px -1%;
+		}
+
+		.timeline-box:nth-child(2n+1){
+			left: 40px;
+		}
+
+		.timeline-box:nth-child(2n){
+			left: 40px;
+		}
+
+		/*Air Scrolling Bar	*/
+		.airScrollBar{
+			left: 0%;
+		    top: 15%;
+		    height: 550px;	
+		}
+
+		#Education .airScrollBar {
+		    top: 21%;
+		    left: 3%;
+		}
+
+		.timeline-content h5{
+			font-size: 1.3rem;
+		}
+
+		.timeline-content h6{
+			font-size: 0.9rem;
+		}
+
+		.timeline-content p{
+			font-size: 0.7rem;
+		}
+
+		.timeline-box p{
+			font-size: 0.7rem;
+			overflow: auto;
+		}
+
+	}
+
+
+	#contact-form input, textarea {
+    font-size: 0.7rem;
+}
+
+	#contact-form button{
+		margin: 20px 15%;
+		font-size: 0.7rem;
+	}
+
+
+	/*Media Query For sumsung Folded mobile	*/
+
+	@media screen and (max-width:360px){
+
+		.timeline-box:nth-child(2n+1){
+			left: 10px;
+		}
+
+		.timeline-box:nth-child(2n){
+			left: 10px;
+		}
+
+		.airScrollBar{
+			display: none;
+		}
+
+	}
